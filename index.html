@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeMap Diagram</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h2 id="title">KickStarter Funding</h2>
+    <p id="description">Top 100 KickStarter Pledge Funding projects.</p>
+    <div id="tooltip"></div>
+    <svg id="canvas"></svg>
+    <svg id="legend">
+        <g>
+            <rect class="legend-item" x="10" y="40" width="40" height="40" fill="#ff00ff"></rect>
+            <text x="60" y="60" fill="blue">Product Design</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="10" y="80" width="40" height="40" fill="#bf00ff"></rect>
+            <text x="60" y="100" fill="blue">Tabletop Games</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="10" y="120" width="40" height="40" fill="#8000ff"></rect>
+            <text x="60" y="140" fill="blue">Gaming Hardware</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="10" y="160" width="40" height="40" fill="#4000ff"></rect>
+            <text x="60" y="180" fill="blue">Video Games</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="10" y="200" width="40" height="40" fill="#0000ff"></rect>
+            <text x="60" y="220" fill="blue">Sound</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="180" y="40" width="40" height="40" fill="#0040ff"></rect>
+            <text x="230" y="60" fill="blue">Television</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="180" y="80" width="40" height="40" fill="#0080ff"></rect>
+            <text x="230" y="100" fill="blue">Narrative Film</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="180" y="120" width="40" height="40" fill="#00bfff"></rect>
+            <text x="230" y="140" fill="blue">Web</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="180" y="160" width="40" height="40" fill="#00ffff"></rect>
+            <text x="230" y="180" fill="blue">Hardware</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="180" y="200" width="40" height="40" fill="#00ff15"></rect>
+            <text x="230" y="220" fill="blue">Games</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="350" y="40" width="40" height="40" fill="#aaff00"></rect>
+            <text x="400" y="60" fill="blue">3D Printing</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="350" y="80" width="40" height="40" fill="#ffff00"></rect>
+            <text x="400" y="100" fill="blue">Technology</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="350" y="120" width="40" height="40" fill="#ffe100"></rect>
+            <text x="400" y="140" fill="blue">Wearables</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="350" y="160" width="40" height="40" fill="#ff0040"></rect>
+            <text x="400" y="180" fill="blue">Sculpture</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="350" y="200" width="40" height="40" fill="#ea0055"></rect>
+            <text x="400" y="220" fill="blue">Apparel</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="520" y="40" width="40" height="40" fill="#d5006a"></rect>
+            <text x="570" y="60" fill="blue">Food</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="520" y="80" width="40" height="40" fill="#bf0080"></rect>
+            <text x="570" y="100" fill="blue">Art</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="520" y="120" width="40" height="40" fill="#9500aa"></rect>
+            <text x="570" y="140" fill="blue">Gadgets</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="520" y="160" width="40" height="40" fill="#8000bf"></rect>
+            <text x="570" y="180" fill="blue">Drinks</text>
+        </g>
+    </svg>
+</body>
+<script src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

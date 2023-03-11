@@ -1,0 +1,37 @@
+body {
+    min-height: 100%;
+    background-color: #8ed1fc;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    background-color: #ff6900;
+    border-radius: 7px;
+}
+
+#canvas {
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+#legend {
+    width: 630px;
+    height: 260px;
+}
+
+#tooltip {
+    visibility: hidden;
+    background-color: #ff6900;
+    width: auto;
+    height: auto;
+}
+
+.tile:hover {
+    fill: #ff6900
+}
